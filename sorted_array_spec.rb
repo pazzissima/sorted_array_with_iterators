@@ -51,11 +51,11 @@ describe SortedArray do
           pending "this is just the same as the example above"
         end
       end
-    end
+    end 
   end
 
   describe :find do
-    it_should_behave_like "yield to all elements in sorted array", :find
+
 
     it "does not currently have any examples for it" do
       pending "define some examples by looking up http://www.ruby-doc.org/core-2.1.0/Enumerable.html#method-i-find"
@@ -63,7 +63,13 @@ describe SortedArray do
   end
 
   describe :inject do
-    it_should_behave_like "yield to all elements in sorted array", :inject
+  #   specify do
+  #     expect do |b|
+  #     block_with_two_args = Proc.new {|acc,ele| return true}
+  #     sorted_array.send{method, block_with_two_args}
+  #   end.to yield_successive_args{[0,2], [2,3], [5,4], [9,7], [16,9]}
+  # end
+
 
     it "does not currently have any examples for it" do
       pending "define some examples by looking up http://www.ruby-doc.org/core-2.1.0/Enumerable.html#method-i-inject"
